@@ -7,7 +7,7 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'precios', component: PreciosComponent },
-  { path: 'protegidas', component: ProtegidaComponent },
+  { path: 'protegida', component: ProtegidaComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 

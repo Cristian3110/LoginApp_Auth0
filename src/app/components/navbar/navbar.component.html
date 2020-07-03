@@ -3,18 +3,20 @@
 
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="#" routerLinkActive [routerLink]="['/home']">Home</a
+        >
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" href="# " [routerLink]="['/precios']">Precios</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Precios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Protegida</a>
-            </li>
-        </ul>
-        <span class="navbar-text">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="# " [routerLink]="['/protegida']">Protegida</a
+        >
+      </li>
+    </ul>
+    <span class="navbar-text">
       Navbar text with an inline element
     </span>
-    </div>
+  </div>
 </nav>
