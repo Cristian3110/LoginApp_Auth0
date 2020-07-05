@@ -9,5 +9,10 @@ import { AuthService } from '../../service/auth.service';
 export class ProtegidaComponent implements OnInit {
   constructor(public auth: AuthService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('ngOninit Protegida');
+    this.auth.userProfile$.subscribe((perfil) => {
+      console.log(perfil);
+    });
+  }
 }
